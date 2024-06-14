@@ -1,6 +1,6 @@
 .footer.minimalist {
     background-color: #f0f0f0;
-    padding: 1px 0;
+    padding: 10px 0;
     text-align: center;
     color: #666;
     font-size: 14px;
@@ -21,9 +21,10 @@
     text-decoration: underline;
 }
 
+/* Gradient Footer */
 .footer.gradient {
     background: linear-gradient(to right, #667eea, #764ba2);
-    padding: 3px 0;
+    padding: 10px 0;
     text-align: center;
     color: #fff;
     font-size: 14px;
@@ -42,9 +43,10 @@
     transform: translateY(-3px);
 }
 
+/* Vintage Footer */
 .footer.vintage {
-    background-color:  #3b1f1f;
-    padding: 1px 0;
+    background-color: #3b1f1f;
+    padding: 10px 0;
     text-align: center;
     color: #fff;
     font-size: 14px;
@@ -60,9 +62,10 @@
     margin-bottom: 10px;
 }
 
+/* Geometric Footer */
 .footer.geometric {
     background-color: #f5f5f5;
-    padding: 1px 0;
+    padding: 10px 0;
     text-align: center;
     color: #333;
     font-size: 14px;
@@ -109,13 +112,10 @@
     text-align: right;
 }
 
-.footer.geometric .footer-info p {
-    margin: 5px 0;
-}
-
+/* Nature Footer */
 .footer.nature {
     background-color: #d0e6c7;
-    padding: 1px 0;
+    padding: 10px 0;
     text-align: center;
     color: #333;
     font-size: 14px;
@@ -126,4 +126,363 @@
     width: 50px;
     height: 50px;
     margin: 0 10px;
+}
+
+/* Slide-in Footer */
+.footer.slide-in {
+    background-color: #333333;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: slideInUp 0.5s ease forwards;
+}
+
+.footer.slide-in .subscribe {
+    margin-top: 10px;
+}
+
+.footer.slide-in input[type="email"],
+.footer.slide-in button {
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+.footer.slide-in button {
+    background-color: #667eea;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer.slide-in button:hover {
+    background-color: #5a67d8;
+}
+
+/* Animated Footer */
+.footer.animated-footer {
+    background-color: #837c17;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+}
+
+.footer.animated-footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer.animated-footer .animated-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer.animated-footer .circle {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    animation: bounceAnimation 1s infinite alternate;
+}
+
+/* Animated Icons Footer */
+.footer.animated-icons {
+    background-color: #662fa5;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+}
+
+.footer.animated-icons .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer.animated-icons .icon {
+    margin: 0 15px;
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.8;
+    animation: bounceAnimation 1.5s infinite alternate;
+}
+
+.footer.animated-icons .icon i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer.animated-icons .icon:hover i {
+    transform: translateY(-5px);
+}
+
+/* Animated Text Footer */
+.footer.animated-footer .animated-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    animation: slideInAnimation 1s ease-out forwards;
+    opacity: 0;
+}
+
+.footer.animated-footer .social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer.animated-footer .social-links li {
+    display: inline-block;
+    margin: 0 10px;
+    animation: fadeInAnimation 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+.footer.animated-footer .animated-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer.animated-footer .animated-link:hover {
+    text-decoration: underline;
+}
+
+/* Moving Text Footer */
+.footer.moving-text-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer.moving-text-footer .moving-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    animation: slideInUpAnimation 1s ease-out forwards;
+    opacity: 0;
+}
+
+.footer.moving-text-footer .moving-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer.moving-text-footer .moving-item {
+    font-size: 16px;
+    animation: moveLeftRightAnimation 2s ease-out infinite alternate;
+    opacity: 0;
+}
+
+/* Keyframes */
+@keyframes slideInUp {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes slideInAnimation {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUpAnimation {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveLeftRightAnimation {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Additional CSS for the last two footers */
+
+.footer.animated-footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer.animated-footer .animated-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer.animated-footer .circle {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    animation: bounceAnimation 1s infinite alternate;
+}
+
+.footer.animated-footer .animated-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    animation: slideInAnimation 1s ease-out forwards;
+    opacity: 0;
+}
+
+.footer.animated-footer .social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer.animated-footer .social-links li {
+    display: inline-block;
+    margin: 0 10px;
+    animation: fadeInAnimation 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+.footer.animated-footer .animated-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer.animated-footer .animated-link:hover {
+    text-decoration: underline;
+}
+
+.footer.moving-text-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer.moving-text-footer .moving-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    animation: slideInUpAnimation 1s ease-out forwards;
+    opacity: 0;
+}
+
+.footer.moving-text-footer .moving-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer.moving-text-footer .moving-item {
+    font-size: 16px;
+    animation: moveLeftRightAnimation 2s ease-out infinite alternate;
+    opacity: 0;
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes slideInAnimation {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUpAnimation {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveLeftRightAnimation {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
