@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-    height: 70px; /* Consistent height for all headers */
+    height: 70px; 
     padding: 10px;
     color: #EEEEEE;
     display: flex;
@@ -15,15 +15,12 @@ body {
     align-items: center;
 }
 
-/* Static Header Styles */
-
-/* Header 1 - Basketball Theme */
 .header1 {
-    background-color: #FF5722; /* Basketball color */
+    background-color: #FF5722; 
 }
 
 .header1 .logo img {
-    height: 50px; /* Adjust height as needed */
+    height: 50px; 
 }
 
 .header1 nav ul {
@@ -33,7 +30,7 @@ body {
 }
 
 .header1 nav ul li a {
-    color: #FFFFFF; /* White text for contrast */
+    color: #FFFFFF; 
     text-decoration: none;
     font-weight: bold;
 }
@@ -42,13 +39,12 @@ body {
     text-decoration: underline;
 }
 
-/* Header 2 - PlayStation Theme */
 .header2 {
-    background-color: #0059ff; /* PlayStation Blue */
+    background-color: #0059ff; 
 }
 
 .header2 .logo img {
-    height: 50px; /* Adjust height as needed */
+    height: 50px; 
 }
 
 .header2 nav ul {
@@ -58,7 +54,7 @@ body {
 }
 
 .header2 nav ul li a {
-    color: #FFFFFF; /* White text for contrast */
+    color: #FFFFFF; 
     text-decoration: none;
     font-weight: bold;
 }
@@ -67,14 +63,13 @@ body {
     text-decoration: underline;
 }
 
-/* Header 3 */
 .header3 {
     background-color: #ffffff;
     border-bottom: 2px solid #00ADB5;
 }
 
 .header3 .logo img {
-    height: 50px; /* Adjust height as needed */
+    height: 50px; 
 }
 
 .header3 nav ul {
@@ -93,13 +88,12 @@ body {
     text-decoration: underline;
 }
 
-/* Header 4 */
 .header4 {
-    background-color: #E8E8E8; /* Background color for header */
+    background-color: #E8E8E8; 
 }
 
 .header4 .logo img {
-    height: 50px; /* Adjust height as needed */
+    height: 50px; 
 }
 
 .header4 nav ul {
@@ -107,12 +101,12 @@ body {
     display: flex;
     gap: 30px;
     padding: 10px 20px;
-    background-color: #FFC0CB; /* Pink background for navigation bar */
-    border-radius: 30px; /* Rounded corners for navigation bar */
+    background-color: #FFC0CB;
+    border-radius: 30px;
 }
 
 .header4 nav ul li a {
-    color: #000000; /* Black text color */
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
 }
@@ -121,7 +115,6 @@ body {
     text-decoration: underline;
 }
 
-/* Header 5 */
 .header5 {
     background-color: #4CAF50;
 }
@@ -155,15 +148,13 @@ body {
     background-color: #FFC700;
 }
 
-/* Spacer Between Static and Animated Headers */
 .spacer {
-    height: 20px; /* Adjust as needed for spacing */
+    height: 20px;
     background-color: transparent;
 }
 
-/* Animated Header Styles */
 .animated-header {
-    height: 70px; /* Consistent height for all headers */
+    height: 70px;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -183,8 +174,8 @@ body {
 }
 
 .animated-header h1 {
-    font-size: 1.5rem; /* Adjust font size */
-    margin: 0; /* Adjust margin */
+    font-size: 1.5rem;
+    margin: 0;
 }
 
 .animated-header nav ul {
@@ -196,11 +187,11 @@ body {
 .animated-header nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 1rem; /* Adjust font size */
+    font-size: 1rem;
     font-weight: bold;
 }
 
-/* Specific animations for each animated header */
+
 .header6 {
     background: linear-gradient(to right, #1f4037, #99f2c8);
     animation: fadeInSlideInHeader6 2s ease-in-out 1;
@@ -226,7 +217,7 @@ body {
     animation: fadeInHeader10 2s ease-in-out 1;
 }
 
-/* Define unique animations for each header */
+
 @keyframes fadeInSlideInHeader6 {
     from {
         opacity: 0;
